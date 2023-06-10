@@ -1,12 +1,12 @@
 {
 	"required": true,
 	"minVersion": "0.8",
-	"package": "com.example.example_mod.mixin",
+	"package": "io.github.insertdead.remap_menu_key.mixin",
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [],
 	"client": [
-		"TitleScreenMixin"
-	],
+    "HandledScreenMixin"
+  ],
 	"injectors": {
 		"defaultRequire": 1
 	}
