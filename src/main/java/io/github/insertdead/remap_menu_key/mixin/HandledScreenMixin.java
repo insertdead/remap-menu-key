@@ -29,7 +29,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 public class HandledScreenMixin {
 	@Inject(method = "keyPressed(III)Z", at = @At("HEAD"))
 	void onKeyPressed(int keyCode, int scanCode, int modifiers, CallbackInfoReturnable<Boolean> ci) {
-		MinecraftClient client = ((HandledScreen) (Object) this).getClient();
+		MinecraftClient client = MinecraftClient.getInstance();
 		if (MenuRemapClient.keyBinding.matchesKey(keyCode, scanCode) && client.player != null) {
 			client.player.closeScreen();
 		}
