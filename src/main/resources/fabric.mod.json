@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "remap_menu_key",
+  "version": "${version}",
+  "name": "Remap Menu Key",
+  "description": "Remap the key we always wanted to remap >:)",
+  "authors": [
+    "insertdead",
+    "Remap Menu Key contributors"
+  ],
+  "contact": {
+    "repo": "https://github.com/insertdead/remap-menu-key"
+  },
+  "license": "GPL-3.0",
+  "icon": "assets/remap_menu_key/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "io.github.insertdead.remap_menu_key.client.RemapMenuKeyClient"
+    ]
+  },
+  "mixins": [
+    "remap_menu_key.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}

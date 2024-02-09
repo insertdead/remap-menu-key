@@ -1,13 +1,13 @@
 {
-	"required": true,
-	"minVersion": "0.8",
-	"package": "io.github.insertdead.remap_menu_key.mixin",
-	"compatibilityLevel": "JAVA_17",
-	"mixins": [],
-	"client": [
-    "HandledScreenMixin"
+  "required": true,
+  "minVersion": "0.8",
+  "package": "mixin.client",
+  "compatibilityLevel": "JAVA_17",
+  "client": [
+    "KeyboardIgnoreEscapeKeyMixin",
+    "MenuRemapMixin"
   ],
-	"injectors": {
-		"defaultRequire": 1
-	}
+  "injectors": {
+    "defaultRequire": 1
+  }
 }
