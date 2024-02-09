@@ -11,7 +11,7 @@ public class RemapMenuKeyClient implements ClientModInitializer {
     public static KeyBinding menuBinding = KeyBindingHelper.registerKeyBinding(new KeyBinding(
             "key.remap_menu_key.escape",
             InputUtil.Type.KEYSYM,
-            InputUtil.GLFW_KEY_CAPS_LOCK,
+            InputUtil.GLFW_KEY_ESCAPE,
             KeyBinding.MISC_CATEGORY
     ));
 
