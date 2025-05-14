@@ -20,7 +20,10 @@
     ]
   },
   "mixins": [
-    "remap_menu_key.mixins.json"
+    {
+      "config": "remap_menu_key.client.mixins.json",
+      "environment": "client"
+    }
   ],
   "depends": {
     "fabricloader": ">=${loader_version}",
